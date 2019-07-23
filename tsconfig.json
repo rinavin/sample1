@@ -1,0 +1,41 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "downlevelIteration": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    //this is for buildall
+    "paths": {
+      "@magic-xpa/mscorelib": ["./dist/mscorelib"],
+      "@magic-xpa/utils"    : ["./dist/utils"],
+      "@magic-xpa/gui"      : ["./dist/gui"],
+      "@magic-xpa/engine"   : ["./dist/engine"],
+      "@magic-xpa/angular"   : ["./dist/angular"],
+      "@magic-xpa/angular-material-core"   : ["./dist/angular-material-core"]
+    }
+//uncomment this to debug
+//    "paths": {
+//      "@magic-xpa/mscorelib": ["./projects/mscorelib"],
+//      "@magic-xpa/utils"    : ["./projects/utils"],
+//      "@magic-xpa/gui"      : ["./projects/gui"],
+//      "@magic-xpa/engine"   : ["./projects/engine"],
+//      "@magic-xpa/angular"   : ["./projects/angular"],
+//      "@magic-xpa/angular-material-core"   : ["./projects/angular-material-core"]
+
+
+//    }
+  }
+}
